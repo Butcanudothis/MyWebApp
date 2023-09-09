@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @* Please develop a web page featuring a web server routine that converts numerical input into words and passes these words as a string output parameter.
+IO example:
+Input: “123.45”
+Output: “ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS”
+Please include:
+1. An HTML web user interface to allow the routine to be tested interactively.
+2. A document outlining the reasons why you selected your approach and why you decided against
+other possible solutions (submitted as a PDF, or .MD file)
+3. A test plan
+4. Supporting files for testing, such as a working executable (if applicable), source files, test harnesses with configuration and data, and solution or project files.
+5. It can be implemented in one of the following server-side languages/environments: C# (preferable), or Java.
+6. Readme.md document containing instructions on how to build, host and interact your solution
+ *@
+ <div>
+    <label for="numericInput">Enter a Numerical Amount:</label>
+    <input type="text" id="numericInput" />
+    <button onclick="convertToWords()">Convert</button>
+</div>
+<div id="result"></div>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
